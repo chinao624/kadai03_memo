@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 32px;
+  background-color: #e0ffff;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Cherry Swash", cursive;
+  text-align: center;
+  font-size: 100px;
+  color: #ffffe0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.wrap{
+  display: flex;
+  justify-content: space-around ;
+}
+/* 登録フォーム部分 */
+#data {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+label {
+  font-size: 18px;
+  padding-right: 30px;
+}
+
+#alergy{
+  width:60%;
+  height: auto;
+}
+
+/* 登録フォーム終了 */
+
+/* カスタマイズ選択部分 */
+.box {
+  width: 40%;
+  background: #ffffe0;
+  border: #ffd700 1px solid;
+  border-radius: 6px; /*角丸の指定*/
+  padding: 10px;
+  margin-right: 8%;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Cherry Swash", cursive;
+  font-size: 18px;
+  margin: 50px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.custom1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.custom2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.custom3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+main {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+footer {
+  background-color: #ffffe0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+/* SaveとClearボタン */
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+#save {
+  width: 200px;
+  height: auto;
+  font-size: larger;
+  font-family: "Amatic SC", cursive;
+  cursor: pointer;
+}
+
+#clear {
+  width: 200px;
+  height: auto;
+  font-size: larger;
+  font-family: "Amatic SC", cursive;
+  cursor: pointer;
+}
+#save:hover {
+  background: #ffb6c1;
+  color: #fff;
+}
+
+#clear:hover {
+  background: #add8e6;
+  color: #fff;
+}
+textarea {
+  margin: 3%;
+  width: 95%;
+  height: 230px;
+  font-size: 80%;
+  box-shadow: 3px 3px 3px 3px #555;
+}
+
+#alergy{
+  font-size: 12px;
+}

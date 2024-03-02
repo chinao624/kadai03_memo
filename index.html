@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>myMemoPad</title>
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- reset.cssを後からいれたらデザインが崩れたのでコメントアウト -->
+    <link rel="stylesheet" href="css/sample.css">
+   
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="icon" href="favicon.ico" id="favicon">
+
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>My Dog Data</h1>
+     <img src="img/header1.jpg" alt="こつぶ" id="header"/>
+    </header>
+
+    <main style="display:none;">
+
+        <div class = "wrap">
+
+        <!-- form記入欄 -->
+        
+         <form id="data">
+            <div>
+                <label for="name">なまえ </label>
+                <input id ="name" name="name" type="text" size="20" />
+            </div>
+                <div>
+                <label for="breed">しゅるい</label>
+                <input id ="breed" name="breed" type="text" />
+            </div>
+
+            <div>
+                <label for="birthday">おたんじょうび</label>
+                <select id="year"></select>
+                <select id="month"></select>
+            </div>
+
+            <div>
+                <label for="weight">おもさ</label>
+                <select id = "weight"></select>
+            </div>
+
+            <div>
+                <label for="doctor">かかりつけ医</label>
+                <input id ="doctor" name="doctor" type="text" />
+            </div>
+        <div>
+            <label for="alergy">アレルギー・おくすりなど</label>
+            <textarea id ="alergy"></textarea>
+        </div>
+         </form>
+         <!-- form終了 -->
+
+         <!-- カスタマイズボックス -->
+        <div class="box">
+       <h3>My Dog Dataをカスタマイズ </h3>
+
+<div class ="custom1">
+    <h4>メインカラーをチェンジ</h4>
+    <input type="color" id="color1">
+</div>
+<div class ="custom2">
+    <h4>アクセントカラーをチェンジ</h4>
+    <input type="color" id="color2">    
+</div>
+
+<div class ="custom3">
+    <h4>ヘッダー写真をチェンジ</h4>
+    <select name="dogs" id="dogs_img">
+        <option value="kot1">こつぶ１</option>
+        <option value="mame1">まめた１</option>
+        <option value="kot2">こつぶ２</option>
+        <option value="mame2">まめた２</option>
+        </select>
+    </div>
+<!-- カスタマイズ終了 -->
+        </div>       
+        
+       </div>
+
+       <div class="button">
+        <button id="save">SAVE!</button>
+        <button id="clear">CLEAR</button>
+      </div>
+
+    </main>
+  
+    <footer><img src="img/nikukyu.png" alt="ロゴ" width="100px"/></footer>
+    
+    <script src="./memo.js"></script>
+
+</body>
+
+</html>
